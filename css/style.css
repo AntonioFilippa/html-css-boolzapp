@@ -1,4 +1,4 @@
-
+/* COMMON */
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +8,82 @@ body{
     height: 100vh;
     background-color: yellow;
     display: flex;
+    font-family: "Lato", sans-serif;
 }
 .container{
     background-color: blue;
     width: 100%;
+    display: flex;
 
 }
 .sidebar {
     display: none;
+    background-color: chocolate;
+}
+.content{
+    flex-grow: 1;
 }
 
+header {
+    background-color:rgb(234, 234, 234);
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+}
+.notifications {
+    background-color: rgb(143, 218, 252);
+    height: 70px;
+}
+footer {
+    height: 70px;
+    background-color: rgb(243, 238, 235);
+    flex-shrink: 0;
+    
+}
+.search{
+    height: 70px;
+}
+.conversation {
+    height: calc(100% - 140px);
+    overflow-y: scroll;
+    background-image: url(../img/mine.jpg);
+}
+img{
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(243, 238, 235);
+    
+    
+}
+.icone{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color:rgb(177, 177, 177) ;
+    cursor: pointer;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+   
+}
+.info-utente{
+    margin-left: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.last-log{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color:rgb(177, 177, 177) ;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* COMMON */

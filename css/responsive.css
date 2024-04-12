@@ -2,11 +2,37 @@
 /* TABLET */
 
 @media screen and (min-width: 576px) {
-    body {
-     background-color: salmon;
+  
+    .sidebar{
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .container{
+        display: flex;
+    }
+    header {
+        background-color: azure;
+        height: 70px;
+        flex-shrink: 0;
+    
+    }
+    .notifications {
+        
+        display: none;
+       
+    }
+    .search{
+        background-color: chartreuse;
+        display: none;
+    }
+    .chats{
+        background-color: aqua;
+        overflow-y:auto ;
     }
  }
- @media  screen and (min-width: 992px ){
+ @media  screen and (min-width: 992px ) { 
     body {
      background-color: violet;
     }
@@ -16,5 +42,18 @@
          height: 90%;
          margin: auto;
          background-color: aqua;
- }
-}
+                }
+    .sidebar {
+       
+        width: 350px;
+       
+            }
+            .notifications{
+                display: block;
+                
+            }
+            .search{
+                display: block;
+            }
+       
+        }
